@@ -56,13 +56,13 @@ jobs:
   dummy:
     runs-on: ubuntu-latest
     steps:
-      - run: "Dummy Job"
+      - run: echo "Dummy Job"
   dummy-two:
     runs-on: ubuntu-latest
     steps:
-      - run: "Dummy Job"
+      - run: echo "Dummy Job"
 
   dummy-three:
-    runs-on: ubuntu-latest
+    runs-on:  ubuntu-latest
     steps:
-      - run: Dummy job 3
+      - run: echo "Dummy job 3"

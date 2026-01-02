@@ -1,0 +1,25 @@
+name: Auth-Actions
+
+on: 
+    workflow_dispatch:
+      
+jobs:
+     job-1:
+        runs-on: Ubuntu
+        steps:
+          - run: echo "Hello"
+          - run: echo "World"
+          - run: sh |
+                   echo "Hello How are you doing"
+                   x="Iam Doing fine"
+                   echo $x
+          - run: echo "Task one Completed";
+
+     job-2:
+        runs-on: Ubuntu
+        needs:
+          - job-1
+        steps:
+          - run: echo "Executing Second Task"
+          - run: echo "If under execution job-1 has complted"
+          - run: echo "Task two completed"

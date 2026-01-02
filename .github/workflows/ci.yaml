@@ -53,3 +53,16 @@ jobs:
        run: echo "Your global evn variable is $hardcoded_data"
 
 
+  dummy:
+    runs-on: ubuntu-latest
+    steps:
+      - run: "Dummy Job"
+  dummy-two:
+    runs-on: ubuntu-latest
+    steps:
+      - run: "Dummy Job"
+
+  dummy-three:
+    runs-on: ubuntu-latest
+    steps:
+      - run: Dummy job 3
